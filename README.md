@@ -47,7 +47,7 @@ git commit -m "Initial commit"
 git push origin master
 ```
 
-[***Ссылка на плейлист***](https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb)
+[Ссылка на плейлист](https://www.youtube.com/playlist?list=PLDyvV36pndZFHXjXuwA_NywNrVQO0aQqb)
 
 ### 3. Показываю что умею работать с LaTeX
 
@@ -106,3 +106,5 @@ $$
   
 `revert: revert "feat: add user authentication" due to bugs`
 
+###  Работа с JS
+[Курс по JS](https://learn.javascript.ru/variables)
