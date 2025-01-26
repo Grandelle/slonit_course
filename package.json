@@ -1,0 +1,22 @@
+{
+  "name": "slonit_course",
+  "version": "1.0.0",
+  "description": "## Введение В этом документе собраны основные команды Git, которые я изучил в ходе прохождения курса. Также я включил ссылку на материалы курса для дальнейшего использования.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grandelle/slonit_course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grandelle/slonit_course/issues"
+  },
+  "homepage": "https://github.com/Grandelle/slonit_course#readme"
+}

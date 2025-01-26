@@ -1,1 +1,1 @@
-console.log("Hello, from console");
+alert( undefined >= 0 );
