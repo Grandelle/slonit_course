@@ -55,7 +55,7 @@ git push origin master
 
 А это формула на новой строке:
 $$
-\int_0^\infty e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
 $$
 
 ### 4. Типы коммитов в Git
