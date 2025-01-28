@@ -1,1 +1,3 @@
-alert( undefined >= 0 );
+["Бильбо", "Гэндальф", "Назгул"].forEach((item, index, array) => {
+    alert(`У ${item} индекс ${index} в ${array}`);
+  });
