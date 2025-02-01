@@ -1,6 +1,9 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+// команда запуска (из-за скрипта): npm run dev 
+
+//Модули
+const http = require('http'); // Для создания HTTP-сервера
+const fs = require('fs'); // Для работы с файловой системой (чтение файлов)
+const path = require('path'); // Для работы с путями файлов (определение расширений файлов)
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -10,11 +13,14 @@ http.createServer((req, res) => {
 
     // Определяем путь к файлу
     let filePath = '.' + req.url;
-    if (filePath == './') {
+
+    if (filePath == './') { // если запрашивайся коренвой путь
         filePath = './index.html';
     }
 
-    const extname = String(path.extname(filePath)).toLowerCase();
+    const extname = String(path.extname(filePath)).toLowerCase(); //смотрим расширение запрашиваемого файла
+
+    // пишем mimi type под расширения
     const mimeTypes = {
         '.html': 'text/html',
         '.js': 'text/javascript',
@@ -34,6 +40,7 @@ http.createServer((req, res) => {
 
     const contentType = mimeTypes[extname] || 'application/octet-stream';
 
+    // Обработка стутаса ответа
     fs.readFile(filePath, (error, content) => {
         if (error) {
             if(error.code == 'ENOENT'){
